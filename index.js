@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 
 // Use a single CORS configuration
-const allowedOrigins = ["https://room-lagbea.netlify.app/"];
+const allowedOrigins = ["*"];
 
 const corsOptions = {
   origin: function (origin, callback) {
