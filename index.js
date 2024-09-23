@@ -16,6 +16,13 @@ import { connectDB } from "./db/connectDB.js";
 dotenv.config();
 const app = express();
 
+const cors = require("cors");
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "*"],
+    credentials: true,
+  })
+);
 // Use a single CORS configuration
 const allowedOrigins = ["*", "http://localhost:5173/"];
 
