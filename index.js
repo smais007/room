@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 
 // Use a single CORS configuration
-const allowedOrigins = ["*"];
+const allowedOrigins = ["*", "http://localhost:5173/"];
 
 const corsOptions = {
   origin: function (origin, callback) {
